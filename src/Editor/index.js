@@ -329,6 +329,7 @@ class WysiwygEditor extends Component {
       'customDecorators',
       'handlePastedText',
       'customStyleMap',
+      'blockStyleFn',
     ]);
 
   getStyleMap = props => ({ ...getCustomStyleMap(), ...props.customStyleMap });
@@ -548,6 +549,7 @@ WysiwygEditor.propTypes = {
   customDecorators: PropTypes.array,
   editorRef: PropTypes.func,
   handlePastedText: PropTypes.func,
+  blockStyleFn: PropTypes.func
 };
 
 WysiwygEditor.defaultProps = {
