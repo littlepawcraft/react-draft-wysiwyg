@@ -549,7 +549,8 @@ WysiwygEditor.propTypes = {
   customDecorators: PropTypes.array,
   editorRef: PropTypes.func,
   handlePastedText: PropTypes.func,
-  blockStyleFn: PropTypes.func
+  blockStyleFn: PropTypes.func,
+  blockRenderMap: PropTypes.func,
 };
 
 WysiwygEditor.defaultProps = {
